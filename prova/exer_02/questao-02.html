@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer-02</title>
+    <style>
+        .conteiner{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: cadetblue;
+            gap: 10px;
+            width: 700px;
+            height: 300px;
+        }
+        .conteiner > div{
+            background-color: white;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 30px;
+        }
+        .pri{
+            grid-column: 1/3;
+        }
+        .seg{
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+        .qui{
+            grid-column: 1/4;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="pri">Item 1</div>
+        <div class="seg">Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div class="qui">Item 5</div>
+    </div>
+</body>
+</html>
