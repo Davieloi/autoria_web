@@ -1,0 +1,186 @@
+/*Configurações gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*O corpo do site tem fonte, cor de fundo , cor de letras e espaçamento entre linhas específico*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/*Um cabeçalho bem ruim*/
+header{
+    background-color: rgb(1, 97, 1);
+    text-align: center;
+    padding: 30px 10px;
+    color: white;
+    border-bottom: 4px solid orange;
+}
+
+/*A sombra foi algo que vi a pouco tempo*/
+header h1{
+    font-size: 2.5rem;
+    text-shadow: 2px 2px black;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+nav  ul{
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(146, 111, 64)
+}
+
+main{
+    width: 90%; /*Largura*/
+    max-width: 900px; /*Largura máxima*/
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+main h2{
+    color: orange;
+    margin-bottom: 15px;
+    border-bottom: 2px solid orange;
+    padding-bottom: 5px;
+}
+
+main h3{
+    color: #fccb72;
+    margin-top: 25px;
+}
+
+main p{
+    margin: 10px 0px;
+}
+
+main li{
+    margin: 10px 0px;
+}
+
+strong {
+    color: #ffd280;
+}
+
+img{
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px solid orange;
+    display: block;
+}
+
+ul{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ol{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+ol li {
+    margin-bottom: 6px;
+}
+
+a{
+    color: rgb(146, 111, 64);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(80, 80, 230);
+    text-decoration: underline;
+}
+
+/*Parte que não me lembrava bem, mas deu certo*/
+@media (max-width: 900px){
+    header h1{
+        font-size: 2rem;
+    }
+
+    header p{
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+
+    main h3 {
+        font-size: 1.1rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
